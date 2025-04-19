@@ -1,0 +1,17 @@
+body {
+    font-family: "Inter", sans-serif;
+
+
+}
+
+.logo{
+    font-family: 'Space Grotesk';
+}
+
+.font-grotesk{
+    font-family: 'Space Grotesk';
+}
+
+.bg-pink{
+    background-image: linear-gradient(rgb(252, 175, 183) 0%, rgb(251, 150, 161) 50%;
+}
