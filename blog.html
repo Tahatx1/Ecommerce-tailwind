@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Tailwind Cdn  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <!-- inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Space Grostek -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="topheader flex align-center justify-center bg-[#161515] text-[white] text-[14px] font-semibold py-[12px]">
+            <a class="bg-[white] text-[black] italic rounded-full px-[12px] py-[2px] mx-[10px] "> SALE! </a>
+            <p> 70% off storewide — Limited time </p>
+            <a class="underline italic mx-[12px]"> Shop Now </a>
+        </div>
+        <div class="main-header p-[20px]">
+            <div class="max-w-[1280px] mx-auto flex">
+                <div class="logo flex-1 md:flex-1">
+                    <h4 class="logo-text text-[20px] font-semibold"> Wosha </h4>
+                </div>
+                <div class="menu flex-1 md:flex-5 hidden md:block">
+                    <ul class="flex justify-center gap-x-[20px] text-[#686868] flex-wrap">
+                        <li> Home </li>
+                        <li> Demos </li>
+                        <li> Shop </li>
+                        <li> Product Types </li>
+                        <li> Pages </li>
+                        <li> Patterns </li>
+                        <li> More </li>
+
+                    </ul>
+                </div>
+                <div class="toggle block md:hidden" id="toggle-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="mobile-nav absolute bg-[white] w-[100%] left-[0] top-[100px] p-[30px] visible md:invisible hidden transition-all delay-150 duration-300 ease-in-out" id="mob-nav">
+                    <ul>
+                        <li> Home </li>
+                        <li> Demos </li>
+                        <li> Shop </li>
+                        <li> Product Types </li>
+                        <li> Pages </li>
+                        <li> Patterns </li>
+                        <li> More </li>
+                    </ul>
+                </div>
+                <div class="header-buttons flex-1 md:flex-1 flex items-center justify-center">
+                    <div class="header-icons text-[#686868] text-[18px] flex justify-center gap-x-[20px]">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-regular fa-user"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+            <div class="banner bg-[#FAC5CB] p-[10px] md:p-[0px]">
+                <div class="max-w-[1280px] min-h-[111px] mx-auto flex flex-col justify-center">
+                    <div class="banner-blogs flex gap-[30px] py-[20px]">
+                        <div class="product-blogs flex-1">
+                            <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/blog-images-13.webp" class="w-[100%] h-[400px] object-cover rounded">
+                            <p class="text-[16px] text-[#767676] my-[8px]"> December 5, 2024 </p>
+                            <h2 class="text-[24px]/[26px] font-grotesk font-semibold"> The Evolution of Party Style: From Subculture to Mainstream </h2>
+                        </div>
+                        <div class="product-blogs flex-1">
+                            <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/blog-images-12.webp" class="w-[100%] h-[400px] object-cover rounded">
+                            <p class="text-[16px] text-[#767676] my-[8px]"> December 5, 2024 </p>
+                            <h2 class="text-[24px]/[26px] font-grotesk font-semibold"> Trends and Innovations in Eco-Friendly Apparel </h2>
+                        </div>
+                        <div class="product-blogs flex-1">
+                            <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/blog-images-11.webp" class="w-[100%] h-[400px] object-cover rounded">
+                            <p class="text-[16px] text-[#767676] my-[8px]"> December 5, 2024 </p>
+                            <h2 class="text-[24px]/[26px] font-grotesk font-semibold"> Transforming Outfits with Statement Pieces </h2>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+               
+            </div>
+
+            <div class="blogs-list my-[30px]">
+                <div class="w-[1280px] mx-auto gap-[20px] grid grid-cols-2">
+                     <div class="blog-card flex gap-[20px]">
+                         <div class="img flex-1">
+                             <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/blog-images-10.webp" class="w-auto object-cover h-[300px] rounded">
+                         </div>
+                         <div class="content flex-1 flex flex-col justify-center">
+                             <p class="text-[16px] text-[#767676] my-[8px]"> December 5, 2024 </p>
+                             <h2 class="font-grotesk text-[24px] font-semibold"> Fashion Icons Through the Decades: Style Influences and Legacies </h2>
+                             <p class="my-[20px]"> A look at the most influential fashion icons and their lasting impact on style. </p>
+                             <a class="underline text-[18px] font-semibold"> <i> Read more </i> </a>
+                         </div>
+                     </div>
+
+                     <div class="blog-card flex gap-[20px]">
+                        <div class="img flex-1">
+                            <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/blog-images-10.webp" class="w-auto object-cover h-[300px] rounded">
+                        </div>
+                        <div class="content flex-1 flex flex-col justify-center">
+                            <p class="text-[16px] text-[#767676] my-[8px]"> December 5, 2024 </p>
+                            <h2 class="font-grotesk text-[24px] font-semibold"> Fashion Icons Through the Decades: Style Influences and Legacies </h2>
+                            <p class="my-[20px]"> A look at the most influential fashion icons and their lasting impact on style. </p>
+                            <a class="underline text-[18px] font-semibold"> <i> Read more </i> </a>
+                        </div>
+                    </div>
+
+                    <div class="blog-card flex gap-[20px]">
+                        <div class="img flex-1">
+                            <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/blog-images-10.webp" class="w-auto object-cover h-[300px] rounded">
+                        </div>
+                        <div class="content flex-1 flex flex-col justify-center">
+                            <p class="text-[16px] text-[#767676] my-[8px]"> December 5, 2024 </p>
+                            <h2 class="font-grotesk text-[24px] font-semibold"> Fashion Icons Through the Decades: Style Influences and Legacies </h2>
+                            <p class="my-[20px]"> A look at the most influential fashion icons and their lasting impact on style. </p>
+                            <a class="underline text-[18px] font-semibold"> <i> Read more </i> </a>
+                        </div>
+                    </div>
+
+                    <div class="blog-card flex gap-[20px]">
+                        <div class="img flex-1">
+                            <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/blog-images-10.webp" class="w-auto object-cover h-[300px] rounded">
+                        </div>
+                        <div class="content flex-1 flex flex-col justify-center">
+                            <p class="text-[16px] text-[#767676] my-[8px]"> December 5, 2024 </p>
+                            <h2 class="font-grotesk text-[24px] font-semibold"> Fashion Icons Through the Decades: Style Influences and Legacies </h2>
+                            <p class="my-[20px]"> A look at the most influential fashion icons and their lasting impact on style. </p>
+                            <a class="underline text-[18px] font-semibold"> <i> Read more </i> </a>
+                        </div>
+                    </div>
+
+                    <div class="blog-card flex gap-[20px]">
+                        <div class="img flex-1">
+                            <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/blog-images-10.webp" class="w-auto object-cover h-[300px] rounded">
+                        </div>
+                        <div class="content flex-1 flex flex-col justify-center">
+                            <p class="text-[16px] text-[#767676] my-[8px]"> December 5, 2024 </p>
+                            <h2 class="font-grotesk text-[24px] font-semibold"> Fashion Icons Through the Decades: Style Influences and Legacies </h2>
+                            <p class="my-[20px]"> A look at the most influential fashion icons and their lasting impact on style. </p>
+                            <a class="underline text-[18px] font-semibold"> <i> Read more </i> </a>
+                        </div>
+                    </div>
+
+                    <div class="blog-card flex gap-[20px]">
+                        <div class="img flex-1">
+                            <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/blog-images-10.webp" class="w-auto object-cover h-[300px] rounded">
+                        </div>
+                        <div class="content flex-1 flex flex-col justify-center">
+                            <p class="text-[16px] text-[#767676] my-[8px]"> December 5, 2024 </p>
+                            <h2 class="font-grotesk text-[24px] font-semibold"> Fashion Icons Through the Decades: Style Influences and Legacies </h2>
+                            <p class="my-[20px]"> A look at the most influential fashion icons and their lasting impact on style. </p>
+                            <a class="underline text-[18px] font-semibold"> <i> Read more </i> </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination flex justify-center py-[32px]">
+                    <button class="bg-[#161515] py-[10px] px-[20px] text-[white] font-semibold mx-[18px] rounded"> 1 </button>
+                    <button class="font-semibold mx-[18px]"> 2 </button>
+                    <button class="mx-[18px]"> -> </button>
+                </div>
+             </div>
+
+
+            
+    </div>
+
+    <footer class="bg-[#F5F5F5] h-[100%] p-[10px] md:p-[0px]">
+
+        <div class="max-w-[1280px] mx-auto">
+            <div class="footer-content flex flex-col md:flex-row py-[80px]">
+                <div class="flex-2">
+                    <div class="logo">
+                        <h4 class="logo-text text-[20px] font-semibold"> Wosha </h4>
+                    </div>
+                    <p class="text-[16px] mt-[10px] text-[#686868] max-w-[800px]">
+                        Amet consectetur Tempor massa felis arcu pellentesque iaculis. Mattis tincidunt vivamus ut velit vitae turpis cursus fringilla. Lectus blandit purus non congue lorem aliquam.
+                    </p>
+                    <i class="fa-brands fa-facebook text-[#686868] text-[20px] p-[6px] bg-[white] rounded-full p-[10px]"></i>
+                    <i class="fa-brands fa-instagram text-[#686868] text-[20px] p-[6px] bg-[white] rounded-full p-[10px]"></i>
+                    <i class="fa-brands fa-x-twitter text-[#686868] text-[20px] p-[6px] bg-[white] rounded-full p-[10px]"></i>
+                </div>
+    
+                <div class="flex-1 grid grid-cols-3 gap-y-[40px]">
+                    <div>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
+                            <li> About Wosha </li>
+                            <li> Careers </li>
+                            <li> Blog </li>
+                            <li> Pricing </li>
+    
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
+                            <li> About Wosha </li>
+                            <li> Careers </li>
+                            <li> Blog </li>
+                            <li> Pricing </li>
+    
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
+                            <li> About Wosha </li>
+                            <li> Careers </li>
+                            <li> Blog </li>
+                            <li> Pricing </li>
+    
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
+                            <li> About Wosha </li>
+                            <li> Careers </li>
+                            <li> Blog </li>
+                            <li> Pricing </li>
+    
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
+                            <li> About Wosha </li>
+                            <li> Careers </li>
+                            <li> Blog </li>
+                            <li> Pricing </li>
+    
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
+                            <li> About Wosha </li>
+                            <li> Careers </li>
+                            <li> Blog </li>
+                            <li> Pricing </li>
+    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright border-t border-[#D6D6D6]">
+                <p class="text-[#686868] text-[14px] text-center p-[10px]"> © 2024 | <strong> Wosha </strong> </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
