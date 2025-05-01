@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Tailwind Cdn  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <!-- inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Space Grostek -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="topheader flex align-center justify-center bg-[#161515] text-[white] text-[14px] font-semibold py-[12px]">
+            <a class="bg-[white] text-[black] italic rounded-full px-[12px] py-[2px] mx-[10px] "> SALE! </a>
+            <p> 70% off storewide — Limited time </p>
+            <a class="underline italic mx-[12px]"> Shop Now </a>
+        </div>
+        <div class="main-header p-[20px]">
+            <div class="max-w-[1280px] mx-auto flex">
+                <div class="logo flex-1 md:flex-1">
+                    <h4 class="logo-text text-[20px] font-semibold"> Wosha </h4>
+                </div>
+                <div class="menu flex-1 md:flex-5 hidden md:block">
+                    <ul class="flex justify-center gap-x-[20px] text-[#686868] flex-wrap">
+                        <li> Home </li>
+                        <li> Demos </li>
+                        <li> Shop </li>
+                        <li> Product Types </li>
+                        <li> Pages </li>
+                        <li> Patterns </li>
+                        <li> More </li>
+
+                    </ul>
+                </div>
+                <div class="toggle block md:hidden" id="toggle-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="mobile-nav absolute bg-[white] w-[100%] left-[0] top-[100px] p-[30px] visible md:invisible hidden transition-all delay-150 duration-300 ease-in-out" id="mob-nav">
+                    <ul>
+                        <li> Home </li>
+                        <li> Demos </li>
+                        <li> Shop </li>
+                        <li> Product Types </li>
+                        <li> Pages </li>
+                        <li> Patterns </li>
+                        <li> More </li>
+                    </ul>
+                </div>
+                <div class="header-buttons flex-1 md:flex-1 flex items-center justify-center">
+                    <div class="header-icons text-[#686868] text-[18px] flex justify-center gap-x-[20px]">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-regular fa-user"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="banner bg-[#F5F5F5] p-[10px] md:p-[0px]">
+            <div class="max-w-[1280px] min-h-[111px] mx-auto flex flex-col justify-center">
+                <h2 class="text-[36px] md:text-[52px] font-grotesk font-semibold"> My account </h2>
+            </div>
+        </div>
+
+        <div class="checkout max-w-[1280px] mx-auto py-[20px] md:py-[80px] flex flex-col-reverse md:flex-row px-[10px] md:px-[0px] gap-[30px]">
+            
+            <div class="checkout-form flex-6">
+                <h2 class="font-grotesk text-[28px] font-semibold pb-[25px]"> Contact information </h2>
+                <span class="text-[14px] text-[#686868]"> We'll use this email to send you details and updates about your order. </span>
+                <input name="username" class="border border-[#D6D6D6] rounded-[10px] w-full bg-[#F5F5F5] text-[20px] p-[14px] mt-[10px]">
+
+                <div class="billing-address">
+                    <h2 class="font-grotesk text-[26px] font-semibold"> Billing address </h2>
+                    <span class="text-[14px] text-[#686868]"> Enter the billing address that matches your payment method. </span>
+                    <input name="username" class="border border-[#D6D6D6] rounded-[10px] w-full bg-[#F5F5F5] text-[20px] p-[14px] mt-[10px]">
+                    <div class="flex gap-[20px]">
+                        <input name="username" class="border border-[#D6D6D6] rounded-[10px] w-full bg-[#F5F5F5] text-[20px] p-[14px] mt-[10px]">
+                        <input name="username" class="border border-[#D6D6D6] rounded-[10px] w-full bg-[#F5F5F5] text-[20px] p-[14px] mt-[10px]">
+                    </div>
+                    <input name="username" class="border border-[#D6D6D6] rounded-[10px] w-full bg-[#F5F5F5] text-[20px] p-[14px] mt-[10px]">
+                    <input name="username" class="border border-[#D6D6D6] rounded-[10px] w-full bg-[#F5F5F5] text-[20px] p-[14px] mt-[10px]">
+                    
+                    <div class="flex gap-[20px]">
+                        <input name="username" class="border border-[#D6D6D6] rounded-[10px] w-full bg-[#F5F5F5] text-[20px] p-[14px] mt-[10px]">
+                        <input name="username" class="border border-[#D6D6D6] rounded-[10px] w-full bg-[#F5F5F5] text-[20px] p-[14px] mt-[10px]">
+                    </div>
+
+                    <div class="flex gap-[20px]">
+                        <input name="username" class="border border-[#D6D6D6] rounded-[10px] w-full bg-[#F5F5F5] text-[20px] p-[14px] mt-[10px]">
+                        <input name="username" class="border border-[#D6D6D6] rounded-[10px] w-full bg-[#F5F5F5] text-[20px] p-[14px] mt-[10px]">
+                    </div>
+
+                </div>
+
+                <div class="payment-options py-[10px] md:py-[0px]">
+                    <h2 class="font-grotesk text-[26px] font-semibold"> Payment options </h2>
+                    <div class="dbt border-[1px] border-[#D6D6D6] px-[20px] py-[10px]">
+                        <input type="radio" id="dbt" name="fav_language" value="HTML">
+                        <label for="dbt text-[16px]"> Direct Bank Transfer </label><br>
+                    </div>
+                    <div class="dbt border-[1px] border-[#D6D6D6] px-[20px] py-[10px]">
+                        <input type="radio" id="dbt" name="fav_language" value="HTML">
+                        <label for="dbt text-[16px]"> Check payments</label><br>
+                    </div>
+                    <div class="dbt border-[1px] border-[#D6D6D6] px-[20px] py-[10px]">
+                        <input type="radio" id="dbt" name="fav_language" value="HTML">
+                        <label for="dbt text-[16px]"> Cash on delivery </label><br>
+                    </div>
+
+
+                </div>
+                <div class="note py-[20px]">
+                    <input type="checkbox" id="note">
+                    <label for="note" class="text-[14px] text-[#767676]"> Add a note to your order </label>
+                </div>
+                
+
+                <span class="block text-[#767676]"> By proceeding with your purchase you agree to our Terms and Conditions and Privacy Policy </span>
+                
+                <div class="place-order flex justify-between pt-[20px]">
+                    <button class="return-to-cart"> Return to Cart </button>
+                    <button class="return-to-cart bg-[#161515] text-[white] text-[16px] font-semibold rounded px-[20px] py-[10px]"> Place Order </button>
+                </div>
+
+            </div>
+            
+            <div class="flex-3">
+                <h4 class="text-[16px] pb-[20px] text-[#686868]"> Order summary </h4>
+                <div class="product flex gap-[20px] mt-[20px]">
+                    <div class="img md:flex-1">
+                        <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/product-image-2-300x300.webp" class="rounded">
+                    </div>
+                    <div class="content md:flex-6 flex flex-col gap-[10px]">
+                        <h2 class="text-[18px] font-semibold text-[#686868]"> Black Turtleneck Sweater </h2>
+                        <span class="text-[#686868]"> $30.00 </span>
+                        <p class="text-[16px] text-[#686868]"> A sleek and cozy black turtleneck sweater, perfect for layering or wearing alone in winter. </p>
+                    </div>
+                    <div class="price md:flex-1">
+                        <h5 class="text-[18px] text-[#686868] text-right"> $60.00 </h5>
+                    </div>
+                </div>
+                <span class="block my-[20px] pb-[20px] border-b border-[#d6d6d6]"> Add a coupon </span>
+                <div class="sub-total my-[20px] pb-[20px] border-b border-[#d6d6d6] flex justify-between">
+                    <h5 class="text-[18px]"> Subtotal </h5>
+                    <h5 class="text-[18px] text-[#686868]"> $60.00 </h5>
+                </div>
+
+                <div class="total my-[20px] pb-[20px] flex justify-between">
+                    <h5 class="text-[18px]"> Total </h5>
+                    <h5 class="text-[18px] text-[#686868]"> $60.00 </h5>
+                </div>
+            </div>
+        </div>
+
+            
+
+
+            
+    </div>
+
+    <footer class="bg-[#F5F5F5] h-[100%] p-[10px] md:p-[0px]">
+
+        <div class="max-w-[1280px] mx-auto">
+            <div class="footer-content flex flex-col md:flex-row py-[80px]">
+                <div class="flex-2">
+                    <div class="logo">
+                        <h4 class="logo-text text-[20px] font-semibold"> Wosha </h4>
+                    </div>
+                    <p class="text-[16px] mt-[10px] text-[#686868] max-w-[800px]">
+                        Amet consectetur Tempor massa felis arcu pellentesque iaculis. Mattis tincidunt vivamus ut velit vitae turpis cursus fringilla. Lectus blandit purus non congue lorem aliquam.
+                    </p>
+                    <i class="fa-brands fa-facebook text-[#686868] text-[20px] p-[6px] bg-[white] rounded-full p-[10px]"></i>
+                    <i class="fa-brands fa-instagram text-[#686868] text-[20px] p-[6px] bg-[white] rounded-full p-[10px]"></i>
+                    <i class="fa-brands fa-x-twitter text-[#686868] text-[20px] p-[6px] bg-[white] rounded-full p-[10px]"></i>
+                </div>
+    
+                <div class="flex-1 grid grid-cols-3 gap-y-[40px]">
+                    <div>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
+                            <li> About Wosha </li>
+                            <li> Careers </li>
+                            <li> Blog </li>
+                            <li> Pricing </li>
+    
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
+                            <li> About Wosha </li>
+                            <li> Careers </li>
+                            <li> Blog </li>
+                            <li> Pricing </li>
+    
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
+                            <li> About Wosha </li>
+                            <li> Careers </li>
+                            <li> Blog </li>
+                            <li> Pricing </li>
+    
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
+                            <li> About Wosha </li>
+                            <li> Careers </li>
+                            <li> Blog </li>
+                            <li> Pricing </li>
+    
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
+                            <li> About Wosha </li>
+                            <li> Careers </li>
+                            <li> Blog </li>
+                            <li> Pricing </li>
+    
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
+                            <li> About Wosha </li>
+                            <li> Careers </li>
+                            <li> Blog </li>
+                            <li> Pricing </li>
+    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright border-t border-[#D6D6D6]">
+                <p class="text-[#686868] text-[14px] text-center p-[10px]"> © 2024 | <strong> Wosha </strong> </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

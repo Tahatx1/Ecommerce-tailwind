@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Tailwind Cdn  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <!-- inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Space Grostek -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="topheader flex align-center justify-center bg-[#161515] text-[white] text-[14px] font-semibold py-[12px]">
+            <a class="bg-[white] text-[black] italic rounded-full px-[12px] py-[2px] mx-[10px] "> SALE! </a>
+            <p> 70% off storewide — Limited time </p>
+            <a class="underline italic mx-[12px]"> Shop Now </a>
+        </div>
+        <div class="main-header p-[20px]">
+            <div class="max-w-[1280px] mx-auto flex">
+                <div class="logo flex-1 md:flex-1">
+                    <h4 class="logo-text text-[20px] font-semibold"> Wosha </h4>
+                </div>
+                <div class="menu flex-1 md:flex-5 hidden md:block">
+                    <ul class="flex justify-center gap-x-[20px] text-[#686868] flex-wrap">
+                        <li> Home </li>
+                        <li> Demos </li>
+                        <li> Shop </li>
+                        <li> Product Types </li>
+                        <li> Pages </li>
+                        <li> Patterns </li>
+                        <li> More </li>
+
+                    </ul>
+                </div>
+                <div class="toggle block md:hidden" id="toggle-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="mobile-nav absolute bg-[white] w-[100%] left-[0] top-[100px] p-[30px] visible md:invisible hidden transition-all delay-150 duration-300 ease-in-out" id="mob-nav">
+                    <ul>
+                        <li> Home </li>
+                        <li> Demos </li>
+                        <li> Shop </li>
+                        <li> Product Types </li>
+                        <li> Pages </li>
+                        <li> Patterns </li>
+                        <li> More </li>
+                    </ul>
+                </div>
+                <div class="header-buttons flex-1 md:flex-1 flex items-center justify-center">
+                    <div class="header-icons text-[#686868] text-[18px] flex justify-center gap-x-[20px]">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-regular fa-user"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="banner p-[10px] md:p-[0px] mt-[80px]">
+            <div class="max-w-[800px] mx-auto flex flex-col items-center justify-center">
+                <h2 class="text-[36px] md:text-[52px] font-grotesk font-semibold"> Welcome to Wosha® </h2>
+                <p class="text-[16px] text-[#767676] text-center mt-[10px] mb-[30px]"> At Wosha, we believe that style is more than just what you wear—it’s a reflection of who you are. Founded with a passion for fashion and a commitment to quality, Wosha brings you a curated selection of clothing that blends trend-setting designs with timeless elegance. </p>
+            </div>
+        </div>
+        <div class="max-w-[1280px] mx-auto">
+            <video class="h-full w-full rounded-lg" controls>
+                <source
+                  src="https://docs.material-tailwind.com/demo.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+        </div> 
+        
+        <div class="our-story bg-[#F5F5F5] py-[80px] mt-[80px] p-[10px] md:p-[10px]">
+            <div class="max-w-[1280px] mx-auto flex flex-col-reverse md:flex-row gap-[40px]">
+                <div class="content flex-1 flex flex-col justify-center align-center"> 
+                    <h2 class="text-[36px] md:text-[48px] font-grotesk font-semibold"> Our Story </h2>
+                    <p class="text-[16px] text-[#686868] mt-[20px]">Inspired by the vibrant diversity of fashion around the world, Wosha was born out of a desire to create a shopping experience that celebrates individuality and self-expression. From casual chic to sophisticated glamour, our collections are carefully chosen to resonate with modern tastes while offering exceptional comfort and durability.                    </p>
+                </div>
+                <div class="img flex-1">
+                    <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/media-1.webp" class="w-auto h-auto">
+                </div>
+            </div>
+        </div>
+
+        <div class="explore-our-collection my-[80px]">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="max-w-[800px] mx-auto">
+                    <h2 class="font-grotesk text-[30px] md:text-[48px] font-semibold text-center"> Explore Our Collections </h2>
+                    <p class="text-[#686868] text-[16px] text-center"> Whether you’re looking for the perfect outfit for a casual day out, a statement piece for a special occasion, or versatile essentials for everyday wear, Wosha has something for every style and occasion. Discover our latest arrivals and timeless classics that inspire confidence and elevate your wardrobe. </p>
+    
+                </div>
+                 <div class="product-list grid grid-cols-1 md:grid-cols-4 gap-[30px] mt-[30px] w-[100%]">
+                        
+                    <div class="product-card">
+                        <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/product-image-27-300x300.webp" class="h-[auto] w-[100%] rounded">
+                       
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/product-image-26-300x300.webp" class="h-[auto] w-[100%] rounded">
+                       
+                    </div>
+                    
+                    <div class="product-card">
+                        <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/product-image-9-300x300.webp" class="h-[auto] w-[100%] rounded">
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/product-image-27-300x300.webp" class="h-[auto] w-[100%] rounded">
+            
+                    </div>
+                </div>
+            
+            </div>
+        
+        </div>
+
+        <div class="testimonials p-[10px] md:p-[0]">
+            <div class="max-w-[1280px] mx-auto">
+                <h2 class="text-[36px] md:text-[48px] font-grotesk font-semibold text-center"> So much love in the air </h2>
+                <div class="testimonial flex flex-col md:flex-row gap-[30px] pt-[20px]">
+                    <div class="card border border-[#D6D6D6] p-[30px] rounded flex flex-col justify-center items-center ">
+                        <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/protrait-3.webp" class="rounded-full w-[60px] h-auto">
+                        <h2 class="font-grotesk text-[18px] font-semibold"> Omar D.	</h2>
+                        <p class="text-center text-[#686868] pt-[20px]"> Stunning gown with luxurious fabric and perfect fit. Received many compliments and felt incredibly elegant. </p>
+                    </div>
+
+                    <div class="card border border-[#D6D6D6] p-[30px] rounded flex flex-col justify-center items-center ">
+                        <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/protrait-2.webp" class="rounded-full w-[60px] h-auto">
+                        <h2 class="font-grotesk text-[18px] font-semibold"> Dalia F. </h2>
+                        <p class="text-center text-[#686868] pt-[20px]"> Cute and comfortable for hot days with lightweight, breathable material. Great for everyday wear. </p>
+                    </div>
+
+                    <div class="card border border-[#D6D6D6] p-[30px] rounded flex flex-col justify-center items-center ">
+                        <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/protrait-1.webp" class="rounded-full w-[60px] h-auto">
+                        <h2 class="font-grotesk text-[18px] font-semibold"> Mandy A. </h2>
+                        <p class="text-center text-[#686868] pt-[20px]"> Classic and versatile design, suitable for various occasions. Fabric quality could be better for the price. Decent buy overall. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="call-to-action max-w-[1280px] mx-auto bg-[#FBCBD1] py-[80px] my-[80px] rounded">
+            <div class="cta flex flex-col justify-center items-center p-[10px] p-[0]">
+                <p class="text-[32px] font-semibold max-w-[700px] text-center">
+                    Have questions or need assistance? Our customer service team is here to help. Feel free to reach out to us – we’d love to hear from you.    
+                </p>
+                <button class="text-[18px] font-semibold bg-[white] px-[25px] py-[10px] rounded mt-[20px] shadow-2xl"> Contact Us </button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="bg-[#F5F5F5] h-[100%] p-[10px] md:p-[0px]">
+
+        <div class="max-w-[1280px] mx-auto">
+            <div class="footer-content flex flex-col md:flex-row py-[80px]">
+                <div class="flex-2">
+                    <div class="logo">
+                        <h4 class="logo-text text-[20px] font-semibold"> Wosha </h4>
+                    </div>
+                    <p class="text-[16px] mt-[10px] text-[#686868] max-w-[800px]">
+                        Amet consectetur Tempor massa felis arcu pellentesque iaculis. Mattis tincidunt vivamus ut velit vitae turpis cursus fringilla. Lectus blandit purus non congue lorem aliquam.
+                    </p>
+                    <i class="fa-brands fa-facebook text-[#686868] text-[20px] p-[6px] bg-[white] rounded-full p-[10px]"></i>
+                    <i class="fa-brands fa-instagram text-[#686868] text-[20px] p-[6px] bg-[white] rounded-full p-[10px]"></i>
+                    <i class="fa-brands fa-x-twitter text-[#686868] text-[20px] p-[6px] bg-[white] rounded-full p-[10px]"></i>
+                </div>
+    
+                <div class="flex-1 grid grid-cols-3 gap-y-[40px]">
+                    <div>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
+                            <li> About Wosha </li>
+                            <li> Careers </li>
+                            <li> Blog </li>
+                            <li> Pricing </li>
+    
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
+                            <li> About Wosha </li>
+                            <li> Careers </li>
+                            <li> Blog </li>
+                            <li> Pricing </li>
+    
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
+                            <li> About Wosha </li>
+                            <li> Careers </li>
+                            <li> Blog </li>
+                            <li> Pricing </li>
+    
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
+                            <li> About Wosha </li>
+                            <li> Careers </li>
+                            <li> Blog </li>
+                            <li> Pricing </li>
+    
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
+                            <li> About Wosha </li>
+                            <li> Careers </li>
+                            <li> Blog </li>
+                            <li> Pricing </li>
+    
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
+                            <li> About Wosha </li>
+                            <li> Careers </li>
+                            <li> Blog </li>
+                            <li> Pricing </li>
+    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright border-t border-[#D6D6D6]">
+                <p class="text-[#686868] text-[14px] text-center p-[10px]"> © 2024 | <strong> Wosha </strong> </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
