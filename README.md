@@ -16,8 +16,8 @@ Hit me up: muhammadtaha.ahmed@yahoo.com
 💨 Lightweight & Fast – Minimal HTML + Tailwind makes it load hella quick
 
 🚀 How to Use
-Clone or download this repo
 
+Clone or download this repo
 Open index.html in your browser
 
 That’s it. No npm, no config, no bullshit
@@ -27,9 +27,10 @@ cd your-theme-repo
 open index.html
 
 🧱 Tech Stack
-HTML5
 
+HTML5
 Tailwind CSS (via CDN)
 
 📸 Preview
+
 Link: https://peppy-bonbon-e4175b.netlify.app/
