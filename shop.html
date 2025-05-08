@@ -29,23 +29,20 @@
         <div class="topheader flex align-center justify-center bg-[#161515] text-[white] text-[14px] font-semibold py-[12px]">
             <a class="bg-[white] text-[black] italic rounded-full px-[12px] py-[2px] mx-[10px] "> SALE! </a>
             <p> 70% off storewide — Limited time </p>
-            <a class="underline italic mx-[12px]"> Shop Now </a>
+            <a href="./shop.html" class="underline italic mx-[12px]"> Shop Now </a>
         </div>
         <div class="main-header p-[20px]">
             <div class="max-w-[1280px] mx-auto flex">
                 <div class="logo flex-1 md:flex-1">
-                    <h4 class="logo-text text-[20px] font-semibold"> Wosha </h4>
+                    <h4 class="logo-text text-[20px] font-semibold"> Logo </h4>
                 </div>
                 <div class="menu flex-1 md:flex-5 hidden md:block">
                     <ul class="flex justify-center gap-x-[20px] text-[#686868] flex-wrap">
-                        <li> Home </li>
-                        <li> Demos </li>
-                        <li> Shop </li>
-                        <li> Product Types </li>
-                        <li> Pages </li>
-                        <li> Patterns </li>
-                        <li> More </li>
-
+                        <li> <a href="./index.html"> Home </a> </li>
+                        <li> <a href="./about.html"> About </a> </li>
+                        <li> <a href="./shop.html"> Shop </a> </li>
+                        <li> <a href="./blog.html"> Blog </a> </li>
+                        <li> <a href="./contact.html"> Contact </a> </li>
                     </ul>
                 </div>
                 <div class="toggle block md:hidden" id="toggle-icon">
@@ -66,8 +63,8 @@
                 <div class="header-buttons flex-1 md:flex-1 flex items-center justify-center">
                     <div class="header-icons text-[#686868] text-[18px] flex justify-center gap-x-[20px]">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-regular fa-user"></i>
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="./login.html"> <i class="fa-regular fa-user"></i>  </a>
+                        <a href="./cart.html"> <i class="fa-solid fa-cart-shopping"></i> </a>
                     </div>
                 </div>
             </div>
@@ -84,14 +81,14 @@
             <div class="collections my-[30px]">
                 <div class="max-w-[1280px] mx-auto">
                     <div class="section-two flex-1 flex flex-row gap-x-[5px] md:gap-x-[20px] min-h-[250px]  md:min-h-[334px]">
-                        <div class="rounded flex-1 h-[auto] bg-center bg-cover p-[10px] md:p-[30px] bg-[url('https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/blog-images-10.webp')] flex flex-col items-start justify-end"> 
+                        <div class="rounded flex-1 h-[auto] bg-center bg-cover p-[10px] md:p-[30px] bg-[url('https://artifydemos.com/Logo/wp-content/uploads/sites/12/2024/12/blog-images-10.webp')] flex flex-col items-start justify-end"> 
                             <h2 class="font-grotesk text-[24px] md:text-[32px] font-semibold"> Summer Collection </h2>
                             <button class="bg-[white] px-[20px] py-[10px] text-[14px] md:text-[18px] rounded mt-[30px] shadow-2xl hover:scale-[1.1] transition duration-200">
                                 Shop Now
                             </button>
                         </div>
 
-                        <div class="rounded flex-1 h-[auto] bg-center bg-cover p-[10px] md:p-[30px] bg-[url('https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/blog-images-1.webp')] flex flex-col items-start justify-end"> 
+                        <div class="rounded flex-1 h-[auto] bg-center bg-cover p-[10px] md:p-[30px] bg-[url('https://artifydemos.com/Logo/wp-content/uploads/sites/12/2024/12/blog-images-1.webp')] flex flex-col items-start justify-end"> 
                             <h2 class="font-grotesk text-[24px] md:text-[32px] text-white font-semibold"> Lady Boss </h2>
                             <button class="bg-[white] px-[20px] py-[10px] text-[14px] md:text-[18px] rounded mt-[30px] shadow-2xl hover:scale-[1.1] transition duration-200">
                                 Shop Now
@@ -114,8 +111,13 @@
                     <div class="product-list grid grid-cols-1 md:grid-cols-4 gap-[30px] mt-[30px] w-[100%]">
                         
                         <div class="product-card">
-                            <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/product-image-27-300x300.webp" class="h-[auto] w-[100%] rounded">
-                            <h3 class="text-[18px] font-semibold text-center mt-[10px]"> Black Turtleneck Sweater </h3>
+                            <a href="./single-product.html">
+                                <img src="https://artifydemos.com/Logo/wp-content/uploads/sites/12/2024/12/product-image-27-300x300.webp" class="h-[auto] w-[100%] rounded">
+
+                            </a>
+                            <a href="./single-product.html">
+                                <h3 class="text-[18px] font-semibold text-center mt-[10px]"> Black Turtleneck Sweater </h3>
+                            </a>
                             <span class="font-semibold block text-center"> $30.00 </span>
                             <div class="star-rating flex justify-center mt-[10px]">
                                 <i class="fa-solid fa-star"></i>
@@ -127,8 +129,12 @@
                         </div>
 
                         <div class="product-card">
-                            <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/product-image-26-300x300.webp" class="h-[auto] w-[100%] rounded">
-                            <h3 class="text-[18px] font-semibold text-center mt-[10px]"> Hoodie </h3>
+                            <a href="./single-product.html">
+                                <img src="https://artifydemos.com/Logo/wp-content/uploads/sites/12/2024/12/product-image-26-300x300.webp" class="h-[auto] w-[100%] rounded">
+                            </a>
+                            <a href="./single-product.html">
+                                <h3 class="text-[18px] font-semibold text-center mt-[10px]"> Hoodie </h3>
+                            </a>
                             <span class="font-semibold block text-center"> $40.00 </span>
                             <div class="star-rating flex justify-center mt-[10px]">
                                 <i class="fa-solid fa-star"></i>
@@ -140,8 +146,12 @@
                         </div>
                         
                         <div class="product-card">
-                            <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/product-image-9-300x300.webp" class="h-[auto] w-[100%] rounded">
-                            <h3 class="text-[18px] font-semibold text-center mt-[10px]"> Regal Satin Party Coat </h3>
+                            <a href="./single-product.html">
+                                <img src="https://artifydemos.com/Logo/wp-content/uploads/sites/12/2024/12/product-image-9-300x300.webp" class="h-[auto] w-[100%] rounded">
+                            </a>
+                            <a href="./single-product.html">
+                                <h3 class="text-[18px] font-semibold text-center mt-[10px]"> Regal Satin Party Coat </h3>
+                            </a>
                             <span class="font-semibold block text-center"> $120.00 </span>
                             <div class="star-rating flex justify-center mt-[10px]">
                                 <i class="fa-solid fa-star"></i>
@@ -153,8 +163,12 @@
                         </div>
 
                         <div class="product-card">
-                            <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/product-image-27-300x300.webp" class="h-[auto] w-[100%] rounded">
-                            <h3 class="text-[18px] font-semibold text-center mt-[10px]"> Black Turtleneck Sweater </h3>
+                            <a href="./single-product.html">
+                                <img src="https://artifydemos.com/Logo/wp-content/uploads/sites/12/2024/12/product-image-27-300x300.webp" class="h-[auto] w-[100%] rounded">
+                            </a>
+                            <a href="./single-product.html">
+                                <h3 class="text-[18px] font-semibold text-center mt-[10px]"> Black Turtleneck Sweater </h3>
+                            </a>
                             <span class="font-semibold block text-center"> $30.00 </span>
                             <div class="star-rating flex justify-center mt-[10px]">
                                 <i class="fa-solid fa-star"></i>
@@ -166,8 +180,12 @@
                         </div>
 
                         <div class="product-card">
-                            <img src="https://artifydemos.com/wosha/wp-content/uploads/sites/12/2024/12/product-image-27-300x300.webp" class="h-[auto] w-[100%] rounded">
-                            <h3 class="text-[18px] font-semibold text-center mt-[10px]"> Black Turtleneck Sweater </h3>
+                            <a href="./single-product.html">
+                                <img src="https://artifydemos.com/Logo/wp-content/uploads/sites/12/2024/12/product-image-27-300x300.webp" class="h-[auto] w-[100%] rounded">
+                            </a>
+                            <a href="./single-product.html">
+                                <h3 class="text-[18px] font-semibold text-center mt-[10px]"> Black Turtleneck Sweater </h3>
+                            </a>
                             <span class="font-semibold block text-center"> $30.00 </span>
                             <div class="star-rating flex justify-center mt-[10px]">
                                 <i class="fa-solid fa-star"></i>
@@ -198,7 +216,7 @@
             <div class="footer-content flex flex-col md:flex-row py-[80px]">
                 <div class="flex-2">
                     <div class="logo">
-                        <h4 class="logo-text text-[20px] font-semibold"> Wosha </h4>
+                        <h4 class="logo-text text-[20px] font-semibold"> Logo </h4>
                     </div>
                     <p class="text-[16px] mt-[10px] text-[#686868] max-w-[800px]">
                         Amet consectetur Tempor massa felis arcu pellentesque iaculis. Mattis tincidunt vivamus ut velit vitae turpis cursus fringilla. Lectus blandit purus non congue lorem aliquam.
@@ -210,9 +228,9 @@
     
                 <div class="flex-1 grid grid-cols-3 gap-y-[40px]">
                     <div>
-                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Logo </h4>
                         <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
-                            <li> About Wosha </li>
+                            <li> About Logo </li>
                             <li> Careers </li>
                             <li> Blog </li>
                             <li> Pricing </li>
@@ -221,9 +239,9 @@
                     </div>
     
                     <div>
-                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Logo </h4>
                         <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
-                            <li> About Wosha </li>
+                            <li> About Logo </li>
                             <li> Careers </li>
                             <li> Blog </li>
                             <li> Pricing </li>
@@ -232,9 +250,9 @@
                     </div>
     
                     <div>
-                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Logo </h4>
                         <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
-                            <li> About Wosha </li>
+                            <li> About Logo </li>
                             <li> Careers </li>
                             <li> Blog </li>
                             <li> Pricing </li>
@@ -243,9 +261,9 @@
                     </div>
     
                     <div>
-                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Logo </h4>
                         <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
-                            <li> About Wosha </li>
+                            <li> About Logo </li>
                             <li> Careers </li>
                             <li> Blog </li>
                             <li> Pricing </li>
@@ -254,9 +272,9 @@
                     </div>
     
                     <div>
-                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Logo </h4>
                         <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
-                            <li> About Wosha </li>
+                            <li> About Logo </li>
                             <li> Careers </li>
                             <li> Blog </li>
                             <li> Pricing </li>
@@ -265,9 +283,9 @@
                     </div>
                     
                     <div>
-                        <h4 class="text-[16px] font-grotesk font-semibold"> Wosha </h4>
+                        <h4 class="text-[16px] font-grotesk font-semibold"> Logo </h4>
                         <ul class="text-[#686868] text-[14px] flex flex-col gap-[10px] mt-[15px]">
-                            <li> About Wosha </li>
+                            <li> About Logo </li>
                             <li> Careers </li>
                             <li> Blog </li>
                             <li> Pricing </li>
@@ -278,7 +296,7 @@
             </div>
 
             <div class="footer-copyright border-t border-[#D6D6D6]">
-                <p class="text-[#686868] text-[14px] text-center p-[10px]"> © 2024 | <strong> Wosha </strong> </p>
+                <p class="text-[#686868] text-[14px] text-center p-[10px]"> © 2024 | <strong> Logo </strong> </p>
             </div>
         </div>
     </footer>
